@@ -1,1 +1,170 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
 
+
+h1,h2,h3,h4,h5 {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Img*/
+.img {
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.picture {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+/* Header*/
+.header {
+    width: 100%;
+    position: absolute; /*absolute*/
+    padding-top: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_name { 
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Nav*/
+.nav { 
+    font-size: 20px;
+    text-transform: uppercase;
+   }
+   
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: color .1s linear;
+   }
+   
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+   }
+   
+.nav__link:hover {
+    color: #fff;
+   }
+   
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+   }
+   
+
+
+   /* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("https://images.pexels.com/photos/1292115/pexels-photo-1292115.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner { 
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: right;
+    height: 600px;
+    
+}
+
+.intro__title {
+    color: #333;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    line-height: 1;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-size: 72px;
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+    vertical-align: top;
+    
+}
+
+/* Main*/
+.main  {
+    background-color: #c3c2c3; 
+    width: 100%;
+    padding-top:1px;
+}
+
+.suptitle {
+    font-size: 35px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.font {
+    font-size: 24px;
+
+}
+
+/* Footer*/
+
+.footer {
+    bottom: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    margin: 0 auto;
+}

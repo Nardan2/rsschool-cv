@@ -158,11 +158,12 @@ h1,h2,h3,h4,h5 {
 
 .footer {
     bottom: 0;
-    background-color: #333;
+    background-color: rgb(68, 67, 67)2c3;
     display: flex;
     justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 p {
